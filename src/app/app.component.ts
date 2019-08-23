@@ -16,8 +16,13 @@ interface AppState {
 export class AppComponent {
   public title = 'Nyaantodo NGRX';
 
+  message$ = Observable<string>;
 
+  constructor(private store: Store<AppState>){
 
+    this.message$ = this.store.select('message');
+
+  }
 
 
 
