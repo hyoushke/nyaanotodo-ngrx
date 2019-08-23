@@ -6,8 +6,10 @@ export function simpleReducer(state: string = 'Hello World', action: Action){
 
   switch (action.type) {
       case 'SPANISHI':
-        return 'Hola Munod';
+        return state = 'Hola Munod';
       case 'JAPANESE':
-        return 'Mother Fucker';
+        return state = 'Mother Fucker';
+      default:
+        return state = 'Bonjoru'  ;
     }
 }
