@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { Store } from '@ngrx/store';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 
 interface AppState {
    message: string;
@@ -16,7 +16,7 @@ interface AppState {
 export class AppComponent {
   public title = 'Nyaantodo NGRX';
 
-  message$ = Observable<string>;
+  public message$ = new Observable<string>();
 
   constructor(private store: Store<AppState>) {
 
