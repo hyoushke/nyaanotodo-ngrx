@@ -5,7 +5,7 @@ export function simpleReducer(state: string = 'Hello World', action: Action) {
   console.log(action.type, state);
 
   switch (action.type) {
-      case 'SPANISHI':
+      case 'SPANISH':
         return state = 'Hola Munod';
 
       case 'JAPANESE':
