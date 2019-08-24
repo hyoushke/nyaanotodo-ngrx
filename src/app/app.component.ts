@@ -44,6 +44,11 @@ export class AppComponent {
     this.store.dispatch(new PostActions.Reset());
   }
 
+  textOnChange($event) {
+    console.log($event);
+    this.store.dispatch(new PostActions.EditText($event.target.value));
+  }
+
 
 }
 

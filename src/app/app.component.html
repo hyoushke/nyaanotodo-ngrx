@@ -1,5 +1,5 @@
 
-
+{{text }}
 <div *ngIf="post | async as p">
 
   <h3>{{ p.text }}</h3>
@@ -17,7 +17,7 @@
   <br />
   <br />
 
-    <input [(ngModel)]="text" />
+    <input [(ngModel)]="text" (keydown)="textOnChange($event)" />
     <button (click)="editText()">Change Title</button>
 
 
